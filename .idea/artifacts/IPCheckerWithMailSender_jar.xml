@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="IPCheckerWithMailSender:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/IPCheckerWithMailSender_jar</output-path>
+    <root id="archive" name="IPCheckerWithMailSender.jar">
+      <element id="module-output" name="IPCheckerWithMailSender" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../IpCheckAndMail/activation.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../IpCheckAndMail/mail.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

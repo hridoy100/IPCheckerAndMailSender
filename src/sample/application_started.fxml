@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #2d4059;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ApplicationController">
+   <children>
+      <VBox alignment="CENTER" layoutY="-1.0" prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="60.0" prefWidth="200.0" spacing="100.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#back" style="-fx-background-color: #ea5455;" text="Stop &amp; Go Back" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+               <padding>
+                  <Insets bottom="15.0" left="20.0" top="15.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets bottom="15.0" top="15.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" prefWidth="200.0">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="140.0" prefWidth="600.0" spacing="10.0">
+                     <children>
+                        <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+                           <children>
+                              <Label text="Application State:" textFill="#f65c78">
+                                 <font>
+                                    <Font name="Calibri Bold" size="26.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="state" prefWidth="200.0" text="Running" textFill="#45eba5">
+                                 <font>
+                                    <Font name="Calibri Bold" size="26.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <padding>
+                              <Insets right="50.0" />
+                           </padding>
+                        </HBox>
+                        <HBox alignment="CENTER_RIGHT" layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+                           <children>
+                              <Label text="Checking Interval:" textFill="#f69e7b">
+                                 <font>
+                                    <Font name="Calibri Bold" size="26.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="timeInterval" prefWidth="200.0" text="3600 seconds" textFill="#45eba5">
+                                 <font>
+                                    <Font name="Calibri Bold" size="26.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <padding>
+                              <Insets right="50.0" />
+                           </padding>
+                        </HBox>
+                        <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+                           <children>
+                              <Label text="Current IP Address:" textFill="#45eba5">
+                                 <font>
+                                    <Font name="Calibri Bold" size="26.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="currentIP" prefWidth="200.0" text="127.0.0.1" textFill="#45eba5">
+                                 <font>
+                                    <Font name="Calibri Bold" size="26.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <padding>
+                              <Insets right="50.0" />
+                           </padding>
+                        </HBox>
+                        <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+                           <children>
+                              <Label text="Last Mail Sent On:" textFill="#1ddde4">
+                                 <font>
+                                    <Font name="Calibri Bold" size="26.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="mailsentOn" prefWidth="200.0" text="---" textFill="#eeeeee">
+                                 <font>
+                                    <Font name="Calibri Bold" size="26.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <padding>
+                              <Insets right="50.0" />
+                           </padding>
+                        </HBox>
+                        <HBox alignment="CENTER_RIGHT" layoutX="10.0" layoutY="110.0" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+                           <children>
+                              <Label text="Last Mail Sent At:" textFill="#f9d56e">
+                                 <font>
+                                    <Font name="Calibri Bold" size="26.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="mailsentAt" prefWidth="200.0" text="---" textFill="#eeeeee">
+                                 <font>
+                                    <Font name="Calibri Bold" size="26.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <padding>
+                              <Insets right="50.0" />
+                           </padding>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+               <padding>
+                  <Insets bottom="20.0" top="20.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets bottom="20.0" top="10.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="20.0" prefWidth="200.0">
+               <padding>
+                  <Insets bottom="5.0" top="5.0" />
+               </padding>
+               <children>
+                  <VBox alignment="CENTER" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="374.0" prefHeight="20.0" prefWidth="200.0">
+               <padding>
+                  <Insets bottom="5.0" top="5.0" />
+               </padding>
+               <children>
+                  <Label text="Developed by" textFill="#e5e5e5">
+                     <font>
+                        <Font name="Calibri Italic" size="12.0" />
+                     </font>
+                  </Label>
+                  <Hyperlink onAction="#developerClicked" text="Raihanul Alam Hridoy" textFill="#ff7171">
+                     <font>
+                        <Font name="Calibri Italic" size="12.0" />
+                     </font>
+                  </Hyperlink>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
